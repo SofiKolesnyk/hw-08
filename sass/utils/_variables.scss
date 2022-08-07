@@ -1,0 +1,20 @@
+:root {
+    /* Основной цвет текста */
+    --primary-text-color: #757575;
+    /* Цвет всех заголовков */
+    --title-text-color: #212121;
+    /* Контрасный цвет фона */
+    --bgc-color: #2F303A;
+    /* Акцент, выделения */
+    --accent-color: #2196F3;
+    /* Базовый белый цвет */
+    --basic-white: #FFFFFF;
+    /* Прочее */
+    --individual-black-logo: #000000;
+    --individual-bgc-color: #F5F4FA;
+    --icon-color: #AFB1B8;
+    --header-border-color: #ECECEC;
+    /* Анимация и переходы */
+    --time-transition: 250ms;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}

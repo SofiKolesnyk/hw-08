@@ -1,0 +1,84 @@
+/* Постоянные переменные на странице */
+body {
+  color: var(--primary-text-color);
+  background: var(--basic-white);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.mobile-container {
+  @media screen and(max-width:479px) {
+    padding: 34px 30px;
+  }
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding: 48px 40px;
+    z-index: 900;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 304px;
+  }
+  &.is-open {
+    display: block;
+
+  }
+}
+
+.section {
+  padding-bottom: 90px;
+  padding-top: 90px;
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+*:focus-visible {
+  outline: none;
+}

@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--bgc-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  &__inner {
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      column-gap: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: baseline;
+    }
+  }
+}
+
+.info {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+  text-align: left;
+}
+  @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+ 
+}
